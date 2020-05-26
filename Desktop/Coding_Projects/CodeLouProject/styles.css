@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+/*
+Media Queries
+*/
+@media (min-width:769px) {
+
+    .wrap {
+        min-height: calc(100vh - 89px);
+    }
+}
