@@ -7,7 +7,7 @@ Media Queries
 */
 @media (min-width:769px) {
 
-    .wrap {
+    /*.wrap {
         min-height: calc(100vh - 89px);
-    }
+    }*/
 }
