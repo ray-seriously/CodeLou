@@ -4,25 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fortune</title>
-    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="script" href="script.js">
 </head>
 <body>
-    <div class="wrap">
-        <nav class="dropdown">
-            <button class="dropbtn"></button>
-            <div class="dropdown-content">
-                <a href="index.html">Home</a>
-                <a href="fortune.html">Fortune</a>
-                <a href="complaints.html">Complaints</a>
-            <div>
-        </nav>
-        <header>
-            <h1>Fortune</h1>
-        </header>
+    <nav class="dropdown">
+        <button class="dropbtn"></button>
+        <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="fortune.html">Fortune</a>
+            <a href="complaints.html">Complaints</a>
+        <div>
+    </nav>
+    <header>
+        <h1>Fortune</h1>
+    </header>
+    <div><!--form-->
+        <form>
+            <fieldset>
+                <legend>Fortune</legend>
+                <label for="fortune-type">Category:</label><br>
+                <select id="fortune-type" name="fortune">
+                    <option value="luck">Luck</option>
+                    <option value="love">Love</option>
+                    <option value="money">Money</option>
+                    <option value="body-mind">Body & Mind</option>
+                </select>
+                <input type="submit" value="Gimme">
+            </fieldset>
+        </form>
     </div>
-    <div><!--form--></div>
     <div><!--response--></div>
     <footer><!--footer nav--></footer>
 </body>
