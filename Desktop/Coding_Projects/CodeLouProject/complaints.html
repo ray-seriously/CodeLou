@@ -8,18 +8,40 @@
     <link rel="script" href="script.js">
 </head>
 <body>
-    <nav class="dropdown">
-        <button class="dropbtn"></button>
-        <div class="dropdown-content">
-            <a href="index.html">Home</a>
-            <a href="fortune.html">Fortune</a>
-            <a href="complaints.html">Complaints</a>
-        <div>
-    </nav>
-    <header>
-        <h1>Complaints</h1>
-    </header>
-    <div><!--form--></div>
+    <div class="content">
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="fortune.html">FORTUNE</a>
+            <a href="complaints.html">COMPLAINTS</a>
+        </nav>
+        <div class="main-content">
+            <header>
+                <h1>Complaints</h1>
+            </header>
+        <!--Form-->
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" name="fname"><br>
+
+            <label for="lname">Last name:</label><br>
+            <input type="text" name="lname"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" name="email"><br>
+
+            <label for="complaint">Category:</label><br>
+            <select id="complaint" name="complaint">
+                <option value="false">DIDN'T COME TRUE</option>
+                <option value="date">DATE SUCKED</option>
+                <option value="appendage">GREW NEW APPENDAGE</option>
+                <option value="voices">KEEP HEARING VOICES</option>
+                <option value="bank">BANK ACCOUNT EMPTIED</option>
+                <option value="void">VOID APPEARED IN HOME</option>
+            </select><br>
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+    </div>
     <footer><!--footer nav--></footer>
 </body>
 </html>

@@ -3,11 +3,19 @@ html {
   padding: 0px;
   margin: 0px;
 }
+body:before {
+	content:"";
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:-1; 
+	background:#D8D8D8;
+	background: linear-gradient(#685584,#3A1D44);
+}
 
 body {
-  height: 100VH;
-  background-image: linear-gradient(#685584,#3A1D44);
-  background-repeat: no-repeat;
   padding: 0px;
   margin: 0px;
  }
@@ -29,12 +37,11 @@ nav {
   align-items: center;
  }
 
-nav a {
-  padding: 5px;
-  text-decoration: none;
-  color: white;
-}
-
+ nav a {
+   padding: 5px;
+   text-decoration: none;
+   color: whitesmoke;
+ }
 
 nav a:hover {
   background-color: white;
@@ -95,7 +102,7 @@ p {
 }
 
 #testimonials div p {
-  font-family: Sora, sans-serif;
+  font-family: Sora Light, sans-serif;
   font-style: italic;
   color: whitesmoke;
   padding-top: 15px;
@@ -124,6 +131,45 @@ height: 40px;
 width: 100%;
 }
 
+/*Forms*/
+form {
+  width: 80vw;
+  font-family: Sora Light, sans-serif;
+  color: #707070;
+  font-size: 16pt;
+  margin-bottom: 20px;
+}
+
+form input {
+  width: 80vw;
+  background-color: whitesmoke;
+  border-color: #3A1D44;
+}
+
+form select {
+  font-family: Sora Light, sans-serif;
+  color: #707070;
+  font-size: 12pt;
+  width: 80vw;
+  background-color: whitesmoke;
+  border-color: #3A1D44;
+}
+
+form input[type="submit"] {
+  width: 50%;
+  font-family: Sora, sans-serif;
+  font-size: 16pt;
+  background-color: #8874A3;
+  color: whitesmoke;
+  border-color: #ffffff;
+  border-style: none;
+  margin-top: 20px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #3A1D44;
+}
+
 /*Media Queries*/
 @media (min-width:769px) {
   nav {
@@ -131,6 +177,11 @@ width: 100%;
     justify-content: space-around;
     height: 40px;
   }
+
+  nav a {
+    min-width: 75px;
+  }
+
   /*Testimonials*/
   #testimonials div {
     
