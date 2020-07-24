@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="script" href="script.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
     <div class="content">
         <nav>
-            <ul class="topnav">
-                <li class="item"><a href="index.html" id="active">HOME</a></li>
-                <li class="item"><a href="fortune.html">FORTUNE</a></li>
-                <li class="item"><a href="complaints.html">COMPLAINTS</a></li>
-                <li class="toggle"><a href="#"><img src="images/crystal_ball.png"></a></li>
+            <img src="images/crystal_ball.png" alt="logo" class="logo">
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars toggle"></i>
+            </button>
+            <ul class="nav-ul" id="nav-ul">
+                <li><a href="index.html" id="active">HOME</a></li>
+                <li><a href="fortune.html">FORTUNE</a></li>
+                <li><a href="complaints.html">COMPLAINTS</a></li>
             </ul>   
         </nav>
         <div class="main-content">
@@ -33,28 +35,39 @@
             <div id="testimonials">
                 <h2>Testimonials</h2>
                 <p>Hear from our satisfied clients!</p>
-                <img src="images/zombie.png">
-                <div class="clients" id="t1">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-                    <p>-Julia</p>
-                </div>
-                <img src="images/skull.png">
-                <div class="clients" id="t2">
-                    <p>"Ipsum sit amet incididunt ut labore et dolore magna aliqua."</p>
-                    <p>-Dave</p>
-                </div>
+                <ul class="test-div">
+                    <li id="t1">
+                        <img src="images/zombie.png">
+                        <div class="clients">
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+                            <p>-Julia</p>
+                        </div>
+                    </li>
+                    <li id="t2">
+                        <img src="images/skull.png">
+                        <div class="clients">
+                            <p>"Ipsum sit amet incididunt ut labore et dolore magna aliqua."</p>
+                            <p>-Dave</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
 
         <!--Contact-->
             <div id="contact">
                 <h2>Contact</h2>
-                <p>Physical Address:<br>
-                    1234 Spirit Ln.<br>
-                    Night Vale, US 66666<br>
-                    Interdimensional portal: v41685g apt. 4 (1 door past the barber)<br><br>
-                    Phone: 1-800-555-1234<br>
-                    Fax (for insurance claims): 1-800-555-3456
-                </p>
+                <div id="info">
+                    <p>Physical Address:<br>
+                        1234 Spirit Ln.<br>
+                        Night Vale, US 66666<br>
+                        Interdimensional portal: v41685g #4<br>
+                        (1 door past the barber)
+                    </p>
+                    <p>
+                        Phone: 1-800-555-1234<br>
+                        Fax (for insurance claims): 1-800-555-3456
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -62,4 +75,5 @@
     <footer></footer>
 
 </body>
+<script src="script.js"></script>
 </html>
