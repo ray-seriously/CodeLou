@@ -1,8 +1,15 @@
-html { 
-  height: 100VH;
-  padding: 0px;
-  margin: 0px;
+html {
+  padding: 0;
+  margin: 0;
 }
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 25px;
+}
+
 body:before {
 	content:"";
 	position:fixed;
@@ -27,26 +34,39 @@ body {
 /*Navigation*/
 nav {
   background-color: #3A1D44;
-  height: 125px;
   width: 100%;
   margin: 0px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   font-family: Raleway, sans-serif;
   font-size: 15pt;
-  align-items: center;
  }
 
- nav a {
-   padding: 5px;
-   text-decoration: none;
-   color: whitesmoke;
- }
+.topnav li a {
+  text-decoration: none;
+  display: block;
+  color: whitesmoke;
+  padding: 15px 15px;
+}
 
-nav a:hover {
-  background-color: white;
+.toggle {
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: whitesmoke;
   color: #3A1D44;
 }
+
+.item {
+  order: 1;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+.active .item {
+  display: block;
 
 /*Main Content (From header to just before footer)*/
 .main-content {
@@ -61,13 +81,13 @@ nav a:hover {
 
 h1 {
   font-family: Raleway, sans-serif;
-  font-size 24pt;
+  font-size: 24pt;
   color: #707070;
 }
 
 h2 {
   font-family: Raleway, sans-serif;
-  font-size 18pt;
+  font-size: 18pt;
   color: #707070;
 }
 
@@ -87,11 +107,11 @@ p {
 #testimonials img {
   width: 80px;
   height: 80px;
-  border-style: solid;
-  border-color: #3A1D44;
+  border-style: none;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: -35px;
+  background-color: whitesmoke;
 }
 
 #testimonials div {
@@ -172,19 +192,24 @@ form input[type="submit"]:hover {
 
 /*Media Queries*/
 @media (min-width:769px) {
-  nav {
-    flex-direction: row;
-    justify-content: space-around;
-    height: 40px;
+  .menu {
+    align-items: flex-start;     
+    flex-wrap: nowrap;
+    background: none;
   }
 
-  nav a {
-    min-width: 75px;
+  .item {
+      order: 1;
+      position: relative;
+      display: block; 
+      width: auto;
   }
 
-  /*Testimonials*/
-  #testimonials div {
-    
+  .button {
+      order: 2;
   }
-  
+
+  .toggle {
+      display: none;
+  }
 }
