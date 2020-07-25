@@ -8,39 +8,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
-    <div class="content">
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="fortune.html">FORTUNE</a>
-            <a href="complaints.html">COMPLAINTS</a>
-        </nav>
-        <div class="main-content">
-            <header>
-                <h1>Complaints</h1>
-            </header>
+    <nav>
+        <img src="images/crystal_ball.png" alt="logo" class="logo">
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars toggle"></i>
+        </button>
+        <ul class="nav-ul" id="nav-ul">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="fortune.html">FORTUNE</a></li>
+            <li><a href="complaints.html" id="active">COMPLAINTS</a></li>
+        </ul>   
+    </nav>
+    <div class="main-content">
+        <header>
+            <h1>Complaints</h1>
+        </header>
         <!--Form-->
         <form>
-            <label for="fname">First name:</label><br>
-            <input type="text" name="fname"><br>
+            <fieldset>
+                <label for="fname">First name:</label><br>
+                <input type="text" name="fname"><br>
 
-            <label for="lname">Last name:</label><br>
-            <input type="text" name="lname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" name="lname"><br>
 
-            <label for="email">Email:</label><br>
-            <input type="email" name="email"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" name="email"><br>
 
-            <label for="complaint">Category:</label><br>
-            <select id="complaint" name="complaint">
-                <option value="false">DIDN'T COME TRUE</option>
-                <option value="date">DATE SUCKED</option>
-                <option value="appendage">GREW NEW APPENDAGE</option>
-                <option value="voices">KEEP HEARING VOICES</option>
-                <option value="bank">BANK ACCOUNT EMPTIED</option>
-                <option value="void">VOID APPEARED IN HOME</option>
-            </select><br>
-            <input type="submit" value="Submit">
+                <label for="complaint">Category:</label><br>
+                <select id="complaint" name="complaint">
+                    <option value="false">DIDN'T COME TRUE</option>
+                    <option value="date">DATE SUCKED</option>
+                    <option value="appendage">GREW NEW APPENDAGE</option>
+                    <option value="voices">KEEP HEARING VOICES</option>
+                    <option value="bank">BANK ACCOUNT EMPTIED</option>
+                    <option value="void">VOID APPEARED IN HOME</option>
+                </select><br>
+            </fieldset>
+            <input onclick="complaintAlert()" type="submit" value="Submit">
         </form>
-        </div>
     </div>
     <footer><!--footer nav--></footer>
 </body>

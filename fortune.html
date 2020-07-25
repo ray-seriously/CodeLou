@@ -8,33 +8,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
-    <nav class="dropdown">
-        <button class="dropbtn"></button>
-        <div class="dropdown-content">
-            <a href="index.html">Home</a>
-            <a href="fortune.html">Fortune</a>
-            <a href="complaints.html">Complaints</a>
-        <div>
+    <nav>
+        <img src="images/crystal_ball.png" alt="logo" class="logo">
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars toggle"></i>
+        </button>
+        <ul class="nav-ul" id="nav-ul">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="fortune.html" id="active">FORTUNE</a></li>
+            <li><a href="complaints.html">COMPLAINTS</a></li>
+        </ul>   
     </nav>
-    <header>
-        <h1>Fortune</h1>
-    </header>
-    <div><!--form-->
-        <form>
-            <fieldset>
-                <legend>Fortune</legend>
-                <label for="fortune-type">Category:</label><br>
-                <select id="fortune-type" name="fortune">
-                    <option value="luck">Luck</option>
-                    <option value="love">Love</option>
-                    <option value="money">Money</option>
-                    <option value="body-mind">Body & Mind</option>
-                </select>
-                <input type="submit" value="Gimme">
-            </fieldset>
-        </form>
+    <div class="main-content">
+        <header>
+            <h1>Fortune</h1>
+        </header>
+        <div><!--form-->
+            <form>
+                <fieldset>
+                    <label for="fortune-type">Category:</label><br>
+                    <select id="fortune-type" name="fortune">
+                        <option value="luck">Luck</option>
+                        <option value="love">Love</option>
+                        <option value="money">Money</option>
+                        <option value="body-mind">Body & Mind</option>
+                    </select>
+                    <input type="submit" value="Gimme">
+                </fieldset>
+            </form>
+        </div>
+        <div><!--response--></div>
     </div>
-    <div><!--response--></div>
     <footer><!--footer nav--></footer>
 </body>
 <script src="script.js"></script>
