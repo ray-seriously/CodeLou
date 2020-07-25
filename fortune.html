@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
+    <!--Navigation-->
     <nav>
         <img src="images/crystal_ball.png" alt="logo" class="logo">
         <button class="hamburger" id="hamburger">
@@ -19,13 +20,16 @@
             <li><a href="complaints.html">COMPLAINTS</a></li>
         </ul>   
     </nav>
+
+    <!--Main Content-->
     <div class="main-content">
         <header>
             <h1>Fortune</h1>
         </header>
         <div>
             <img src="images/prediction.png" alt="prediction" class="prediction">
-            <!--form-->
+
+            <!--Fortune Teller Form-->
             <form>
                 <fieldset>
                     <label for="fortune-type">Category:</label><br>
@@ -38,11 +42,14 @@
                     <input type="button" onclick="fortuneResponses()" value="Gimme">
                 </fieldset>
             </form>
+
+            <!--Fortune Teller Response-->
             <p id="response"></p>
         </div>
-        <div><!--response--></div>
     </div>
-    <footer><!--footer nav--></footer>
+    
+    <!--Footer nav (empty html with css styling only)-->
+    <footer></footer>
 </body>
 <script src="script.js"></script>
 </html>
