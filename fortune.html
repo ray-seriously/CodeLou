@@ -23,7 +23,9 @@
         <header>
             <h1>Fortune</h1>
         </header>
-        <div><!--form-->
+        <div>
+            <img src="images/prediction.png" alt="prediction" class="prediction">
+            <!--form-->
             <form>
                 <fieldset>
                     <label for="fortune-type">Category:</label><br>
@@ -33,9 +35,10 @@
                         <option value="money">Money</option>
                         <option value="body-mind">Body & Mind</option>
                     </select>
-                    <input type="submit" value="Gimme">
+                    <input type="button" onclick="fortuneResponses()" value="Gimme">
                 </fieldset>
             </form>
+            <p id="response"></p>
         </div>
         <div><!--response--></div>
     </div>
