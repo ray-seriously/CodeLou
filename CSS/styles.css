@@ -235,25 +235,30 @@ input[type="button"]:hover {
 @media (max-width:800px) {
   /*Top nav*/
   .nav-ul {
-      display: none;
+    display: none;
   }
 
   .nav-ul.show {
-      display: flex;
-      width: 100%;
-      flex-direction: column;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #active {
+    width: 100vw;
+    text-align: center;
   }
 
   .hamburger {
-      display: block;
+    display: block;
   }
 
   .logo {
-      width: 40px;
+    width: 40px;
   }
 
   .nav-ul li a {
-      padding: 10px;
+    padding: 10px;
   }
 
   nav a:hover {
