@@ -12,13 +12,18 @@ function complaintAlert() {
   }
 
   // Add image to Complaints page after alert pops-up //
-function addImage(){
+function addImage() {
     document.getElementById("oops").innerHTML += "<img src='images/graveyard.png'>";
 }
 
 // Add error message to Complaints page under image after alert pops-up //
-function addMessage(){
+function addMessage() {
     document.getElementById("oops").innerHTML += "<p>Oh, dear. :(</p>";
+}
+
+// Disable complaint button after one click //
+function disableButton(){
+    document.getElementById("complainbtn").disabled = true;
 }
 
 // Fortune Teller response //
